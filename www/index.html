@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="cordova.js"></script>
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js">
+    </script>
+</head>
+<body>
+	<section class="container-fluid section-padding-100-0 section-padding-0-100">
+    <div class="game-section spad wow fadeInUp">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <!--Seção Titulo-->
+            <div class=" container-fluid text-center">
+              <i class="fa-2x fa fa-graduation-cap"></i>
+              <div class="line"></div>
+              <h2>Exercício de memória</h2>
+              <p>Está preparado(a)? Esse jogo é bem fácil, você vai exercitar a sua memória.</p>
+                <input type="button" onclick="iniciar()" value="iniciar">
+                <input id="repete" type="button" onclick="repete()" value="Repetir">
+            </div>
+          </div>
+          <br>
+          <!-- Jogo da Memória -->
+          <div class="col-8">
+            <section class="memory-game" id="game">
+                <div class="repet">
+                    
+                </div>
+              <div class="memory-card" data-framework="donut">
+                <!--Card 1-->
+                <img class="front-face" src="img/William.jpg" alt="Donut" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="donut">
+                <img class="front-face" src="img/William.jpg" alt="" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="pizza">
+                <!--Card 2-->
+                <img class="front-face" src="img/ricardo.jpg" alt="Pizza" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              <div class="memory-card" data-framework="pizza">
+                <img class="front-face" src="img/ricardo.jpg" alt="Pizza" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="dog">
+                <!--Card 3-->
+                <img class="front-face" src="img/fidelis.jpg" alt="Dog" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              <div class="memory-card" data-framework="dog">
+                <img class="front-face" src="img/fidelis.jpg" alt="Dog" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="queijo">
+                <!--Card 4-->
+                <img class="front-face" src="img/elis.jpeg" alt="Queijo" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              <div class="memory-card" data-framework="queijo">
+                <img class="front-face" src="img/elis.jpeg" alt="Queijo" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="elefante">
+                <!--Card 5-->
+                <img class="front-face" src="img/Tamara.jpg" alt="Elefante" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              <div class="memory-card" data-framework="elefante">
+                <img class="front-face" src="img/Tamara.jpg" alt="Elefante" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+
+              <div class="memory-card" data-framework="Cat">
+                <!--Card 6-->
+                <img class="front-face" src="img/Iury.jpeg" alt="Cat" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              <div class="memory-card" data-framework="Cat">
+                <img class="front-face" src="img/Iury.jpeg" alt="Cat" />
+                <img class="back-face" src="img/cps.png" alt="Play" />
+              </div>
+              
+            </section>
+            <!-- Jogo da Memória -->
+          </div>
+        </div>
+        <!-- Seção Game End -->
+          <p>Designer By Gustavo P e Leandro A</p>
+
+        <p>Imagens By <a href="https://br.freepik.com/catalyststuff">Freepick</a></p>
+  </section>
+</body>
+</html>
